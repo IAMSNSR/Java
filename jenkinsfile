@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage('chekout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/IAMSNSR/Java.git'
+            }
+        }
+    }
+}
